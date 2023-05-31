@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class HashMapEx {
 
     public static void main(String[] args) {
-        HashMap<String,String> country =new HashMap();
+        HashMap<String,String> country =new HashMap<>();
 
         country.put("Tr","Turkey");
         country.put("En","England");
@@ -21,5 +21,13 @@ public class HashMapEx {
         System.out.println(country.remove("Fr"));
         System.out.println(country.size());
         System.out.println(country);
+
+        for (String c : country.keySet()){
+            System.out.println(c);
+        }
+
+        for (String c : country.values()){
+            System.out.println(c);
+        }
     }
 }
