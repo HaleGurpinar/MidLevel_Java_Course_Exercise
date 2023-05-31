@@ -15,6 +15,11 @@ public class HashMapEx {
 
         System.out.println(country);
         System.out.println(country.get("Jp"));
-
+        System.out.println(country.containsKey("En"));
+        System.out.println(country.containsValue("England"));
+        System.out.println(country.containsValue("Italy"));
+        System.out.println(country.remove("Fr"));
+        System.out.println(country.size());
+        System.out.println(country);
     }
 }
